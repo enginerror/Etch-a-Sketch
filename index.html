@@ -15,28 +15,25 @@
         </div>
 
         <div class="upperBtn">
-            <input type="color">
-            <button>Grid</button>
-            <input type="range">
-            <div><p>16x16</p></div>
+            <input type="color" min="1" max="100" value="#2a2727">
+            <input type="range" id="range-input" value="16">
+            <div id="rangeValue"><p id="rangeValueText">16x16</p></div>
         </div>
 
-        <div id="sketch-area" class="container"></div>
+        <div class="containerArea">
+            <div id="sketch-area" class="container"></div>
+        </div>
 
         <div class="lowerBtn">
-            <div class="lowerBtn-left">
-                <button>Red</button>
-                <button>Blue</button>
-                <button>Black</button>
-                <button>Rainbow</button>
-                <button>Eraser</button>
-            </div>
-
-            <div class="lowerBtn-left">
-                <button>Reset Canvas</button>
-            </div>
+            <button id="redBtn">Red</button>
+            <button id="blueBtn">Blue</button>
+            <button id="blackBtn">Black</button>
+            <button id="rainbowBtn">Rainbow</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="gridBtn">Grid</button>
+            <button id="resetBtn">Reset</button>
         </div>
-        
+
     </section>
 
     <script src="script.js"></script>
